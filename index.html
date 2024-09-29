@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- yo meta character bhaneko one of the character set jasle hamro text hunxa ni website ma teslai display hanxa initial scale bhaneko chai size hai kastyo dekhaunu xa -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- yo link haru xa ni yo chai hamle connect garna lai afnyo website ma use huney sab chinya kura head ma define hunxa  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <!-- stylesheet le hamro html decorate garnya kaam garxa like hamle cake kadya bread tah ho ni html is bread and the cream in the bread is css  -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- title chai hamro weppage ko mathi auuxa ni nam teslai bhanxa title  -->
+    <title>Aashika Pandey</title>
+</head>
+<body>
+    <!-- webpage bitra k hunxa tyo sab yaha lekhinxa  -->
+     <!-- yo nav bar bhaneko chai ni menu bar jun hamro website ko mathi display hunxa  -->
+       <!-- ava css ma decorade garnu paryo tyo garna lai css le kasari thapauxa ki yesmai change garnu parxa bhnadya hamle class lekhera define garxam ani tehi class vari change hanxa  -->
+   
+       <nav class="navbar">
+    <!-- jastai yaha div suru bhayo ni logo lagi chutai xa kina ki logo ma different change rakhya xam ra menu bar different ma rakya xam  -->
+        <div class="logowapper">Aashika Pandey</div>
+        <!-- any cahnages in the div class change enitre div class hai for example  -->
+        <!-- yaha chai nav_item chai parent div bhayo ani yo flex_container chai child div bhayo hai  -->
+        <div class="nav_items">
+            <div class="flex_container">
+                <div class="nav_item"><a href="#" class="nav_link">Home</a></div>
+                <div class="nav_item"><a href="#a_id" class="nav_link">Skills</a></div>
+                <div class="nav_item"><a href="#contact_id" class="nav_link">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- yo div le k garna ni sakinxa bhandya divide garna menu bar xutai ani yo page xutai garnya kaam div class le garxa  -->
+ <!-- similarly intri section ma ni div class garera lekhyam yaha h1 tag dekheu bhnaya its highest biggest letter in html p tag bhaneko paragraph 
+  ahref bhaneko chai link garnya jastai timle home page lagnya tes paxi about page lagxa ni tyo sab garxa href tag le jastai yo highlight garya hera -->
+  <!-- yo strong bhaneko bold hai    -->
+  <div class="intro_section">
+        <div class="flex_container intro_content">
+            <div class="intro_text">
+                <strong class="intro_greeting">Hi, I am</strong>
+                <h1 class="intro_name">Aashika Pandey</h1>
+                <p class="intro_description">
+                    I am a dedicated Computer Engineering student set to graduate in 2026 from Nepal Engineering College. With a solid foundation in programming languages such as Java, C, and C++, I have honed my skills in software development and problem-solving. Additionally, I possess advanced knowledge of database management, which enhances my ability to design and implement efficient data solutions. I am eager to leverage my skills in innovative projects and contribute to the ever-evolving tech landscape.
+                </p>
+                <div class="contact_button">
+                    <a href="#contact_id"><button class="primary_button">Contact Me</button></a>
+                </div>
+            </div>
+            <div class="profile_image"></div>
+        </div>
+    </div>
+     <!-- divider bhaneko line in html .. line bhannu xa bhanya divider use hunxa  -->
+    <div class="divider"></div>
+
+    <div class="skills_section">
+        <h2 class="skills_title">What I Do!!</h2>
+        <div class="flex_container skills_container">
+            <div class="rounded_card" id="a_id">
+                <!-- yo i class chai icon leko ho jun hamle mathi link garya tyam in tyaha bata icon leko ho hai  -->
+                <i class="fa-solid fa-compass-drafting icon"></i>
+                <div class="card_title">Web Development</div>
+                <div class="card_description">
+                    As a passionate web developer, I specialize in creating dynamic and responsive websites tailored to meet your unique vision. I focus on user experience and functionality to deliver high-quality solutions.
+                </div>
+            </div>
+            <div class="rounded_card">
+                <i class="fa-solid fa-mobile icon"></i>
+                <div class="card_title">App Development</div>
+                <div class="card_description">
+                    As a dedicated app developer, I excel in crafting intuitive mobile applications. I leverage modern frameworks and technologies to build visually appealing and highly functional apps.
+                </div>
+            </div>
+            <div class="rounded_card">
+                <i class="fa-solid fa-pen-nib icon"></i>
+                <div class="card_title">UI/UX Design</div>
+                <div class="card_description">
+                    As a passionate UI/UX designer, I create user-centered interfaces that provide seamless interactions. My process is rooted in understanding user needs and behaviors.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    
+    <div class="primary_banner">
+        Have any projects in mind? <br/>
+        <!-- button bhaneko chai click garna milnya bauana milxa tyo submit type ko button  -->
+         <!-- form tag le chai form bhanauxa  matlab tabular structure ma rakhna help hanxa  -->
+        <!-- yo href ma number rakhyo bhanya siddhai call hanaa milxa yesko arkyo ni xa mail bhanera tesma chai siddhai mail garna milxa  -->
+        <a href="tel:9824873029">
+            <button class="primary_button">Call Me!!!!</button>
+        </a>
+    </div>
+
+    <div class="contact_container" id="contact_id">
+        <div class="flex_container contact_content">
+            <div class="contact_picture"></div>
+            <div class="contact_form">
+                <h2>Contact me:</h2>
+                <form action="./index.html" method="get">
+                    <label>Your name:</label>
+                    <input type="text" name="person_name" required/>
+                    <label>Mobile Number:</label>
+                    <input type="text" name="mobile_number" required/>
+                    <label>Message:</label>
+                    <textarea name="message" required></textarea>
+                    <button type="submit" class="primary_button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Jaleshwor-4, Mahottari | aashikapandey.com.np | All rights reserved &copy; 2024
+    </div>
+</body>
+</html>

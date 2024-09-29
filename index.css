@@ -1,0 +1,305 @@
+/* root gare chai yo color haru jaha ni choose garna milxa bhanera root ma rakheko */
+:root {
+  --primary: #5d5f95;
+  --lightPrimary: #6769a6;
+  --background: #f4f0f0;
+  --textColor: #434343;
+  --dividerColor: #e7e7e7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* yaha ava sab styling hai letter size text style m argin photo sab yahi xa */
+/* yo body ko lagi  */
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+/* yo link ko lagi  */
+a {
+  text-decoration: none;
+}
+/* menu bar  */
+.navbar {
+  background: var(--lightPrimary);
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+/* logo ko lagi  */
+.logowapper {
+  font-weight: bold;
+  color: white;
+  font-size: 24px; /* Increase font size for better visibility */
+}
+/* home service contact ko lagi  */
+.nav_items {
+  display: flex;
+  margin-left: auto; /* Align nav items to the right */
+}
+
+.nav_item {
+  margin: 0 15px; /* Add space between nav items */
+}
+
+.nav_link {
+  color: white; /* Change text color to white */
+  font-weight: bold;
+  padding: 8px 12px; /* Add padding for a button-like effect */
+  transition: background 0.3s; /* Smooth transition for hover effect */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+/* hover bhaneko chai timi website ma jadya ali button haru thicham thicham lagxa ni tini haru ho like  */
+.nav_link:hover {
+  background: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+
+.intro_section {
+  background: #e7e7e7;
+  padding: 40px 0;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+}
+
+.intro_content {
+  align-items: center;
+}
+
+.intro_text {
+  flex: 1;
+}
+
+.intro_greeting {
+  color: #636363;
+}
+
+.intro_name {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.intro_description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--textColor);
+}
+
+.contact_button {
+  text-align: center;
+}
+
+.profile_image {
+  height: 150px; /* Adjust height */
+  width: 150px; /* Adjust width */
+  background: url('a.jpg'); /* Image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.divider {
+  height: 2px;
+  background: var(--dividerColor);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.skills_section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.skills_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.skills_container {
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.rounded_card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 35px;
+  color: var(--primary);
+}
+
+.card_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card_description {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.primary_banner {
+  background: var(--primary);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact_container {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_picture {
+  height: 150px;
+  width: 150px;
+  background: url('b.jpg'); /* Your contact picture */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.contact_form {
+  width: 500px;
+}
+
+.contact_form h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact_form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--lightPrimary);
+  color: white;
+}
+
+.primary_button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.primary_button:hover {
+  background: var(--lightPrimary);
+}
+/* Existing styles remain unchanged */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .nav_items {
+    margin-left: 0; /* Reset margin */
+    width: 100%; /* Full width */
+    justify-content: space-around; /* Spread items */
+    margin-top: 10px; /* Add space above */
+  }
+
+  .nav_item {
+    margin: 5px 0; /* Vertical spacing for nav items */
+  }
+
+  .intro_section {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .flex_container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align */
+  }
+
+  .profile_image {
+    height: 100px; /* Reduce size for mobile */
+    width: 100px; /* Reduce size for mobile */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .intro_name {
+    font-size: 28px; /* Smaller font size */
+  }
+
+  .intro_description {
+    font-size: 14px; /* Ensure readability */
+  }
+
+  .rounded_card {
+    width: 90%; /* Full width on mobile */
+    margin: 10px 0; /* Vertical spacing */
+  }
+
+  .skills_container {
+    flex-direction: column; /* Stack skills vertically */
+  }
+
+  .contact_content {
+    flex-direction: column; /* Stack contact items */
+    align-items: center; /* Center items */
+  }
+
+  .contact_form {
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+
+  .footer {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .primary_banner {
+    font-size: 24px; /* Adjust font size for mobile */
+    padding: 20px; /* Reduce padding */
+  }
+}
+
